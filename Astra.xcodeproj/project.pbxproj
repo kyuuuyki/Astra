@@ -7,23 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C569052928585C210000856F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569052828585C210000856F /* AppDelegate.swift */; };
-		C569052B28585C210000856F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569052A28585C210000856F /* SceneDelegate.swift */; };
-		C569052D28585C210000856F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569052C28585C210000856F /* ViewController.swift */; };
+		C50BC4C8285892F30093F6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50BC4C7285892F30093F6A5 /* Assets.xcassets */; };
+		C54821762860C287001FB4E3 /* AstraMediaLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C54821752860C287001FB4E3 /* AstraMediaLibrary */; };
+		C558178D285D1B8000FC9A96 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = C558178C285D1B8000FC9A96 /* SideMenu */; };
 		C569053028585C210000856F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C569052E28585C210000856F /* Main.storyboard */; };
-		C569053228585C220000856F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C569053128585C220000856F /* Assets.xcassets */; };
 		C569053528585C220000856F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C569053328585C220000856F /* LaunchScreen.storyboard */; };
+		C569054628585C450000856F /* TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569053D28585C450000856F /* TransitionCoordinator.swift */; };
+		C569054728585C450000856F /* Assembler+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569053E28585C450000856F /* Assembler+Authentication.swift */; };
+		C569054828585C450000856F /* Assembler+MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569053F28585C450000856F /* Assembler+MediaLibrary.swift */; };
+		C569054928585C450000856F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569054028585C450000856F /* Assembler.swift */; };
+		C569054A28585C450000856F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569054128585C450000856F /* AppDelegate.swift */; };
+		C569054D28585C450000856F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569054428585C450000856F /* SceneDelegate.swift */; };
+		C569054E28585C450000856F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569054528585C450000856F /* ViewController.swift */; };
+		C569055228585C9C0000856F /* AstraAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = C569055128585C9C0000856F /* AstraAuthentication */; };
+		C569055828585CF20000856F /* AstraCoreAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C569055728585CF20000856F /* AstraCoreAPI */; };
+		C569056028585F1C0000856F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C569055F28585F1C0000856F /* IQKeyboardManagerSwift */; };
+		C5CAA6C0285863370089F6B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5CAA6BF285863370089F6B1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C50BC4C7285892F30093F6A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C569052528585C210000856F /* Astra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astra.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C569052828585C210000856F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C569052A28585C210000856F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C569052C28585C210000856F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C569052F28585C210000856F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C569053128585C220000856F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C569053428585C220000856F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C569053628585C220000856F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C569053D28585C450000856F /* TransitionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
+		C569053E28585C450000856F /* Assembler+Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+Authentication.swift"; sourceTree = "<group>"; };
+		C569053F28585C450000856F /* Assembler+MediaLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+MediaLibrary.swift"; sourceTree = "<group>"; };
+		C569054028585C450000856F /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		C569054128585C450000856F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C569054428585C450000856F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C569054528585C450000856F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5CAA6BF285863370089F6B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C569055828585CF20000856F /* AstraCoreAPI in Frameworks */,
+				C569055228585C9C0000856F /* AstraAuthentication in Frameworks */,
+				C54821762860C287001FB4E3 /* AstraMediaLibrary in Frameworks */,
+				C558178D285D1B8000FC9A96 /* SideMenu in Frameworks */,
+				C569056028585F1C0000856F /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,28 @@
 		C569052728585C210000856F /* Astra */ = {
 			isa = PBXGroup;
 			children = (
-				C569052828585C210000856F /* AppDelegate.swift */,
-				C569052A28585C210000856F /* SceneDelegate.swift */,
-				C569052C28585C210000856F /* ViewController.swift */,
+				C569054128585C450000856F /* AppDelegate.swift */,
+				C50BC4C7285892F30093F6A5 /* Assets.xcassets */,
+				C569053C28585C450000856F /* Assembler */,
+				C5CAA6BF285863370089F6B1 /* GoogleService-Info.plist */,
+				C569054428585C450000856F /* SceneDelegate.swift */,
+				C569054528585C450000856F /* ViewController.swift */,
 				C569052E28585C210000856F /* Main.storyboard */,
-				C569053128585C220000856F /* Assets.xcassets */,
 				C569053328585C220000856F /* LaunchScreen.storyboard */,
 				C569053628585C220000856F /* Info.plist */,
 			);
 			path = Astra;
+			sourceTree = "<group>";
+		};
+		C569053C28585C450000856F /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				C569053D28585C450000856F /* TransitionCoordinator.swift */,
+				C569053E28585C450000856F /* Assembler+Authentication.swift */,
+				C569053F28585C450000856F /* Assembler+MediaLibrary.swift */,
+				C569054028585C450000856F /* Assembler.swift */,
+			);
+			path = Assembler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +110,20 @@
 				C569052128585C210000856F /* Sources */,
 				C569052228585C210000856F /* Frameworks */,
 				C569052328585C210000856F /* Resources */,
+				C569054F28585C650000856F /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Astra;
+			packageProductDependencies = (
+				C569055128585C9C0000856F /* AstraAuthentication */,
+				C569055728585CF20000856F /* AstraCoreAPI */,
+				C569055F28585F1C0000856F /* IQKeyboardManagerSwift */,
+				C558178C285D1B8000FC9A96 /* SideMenu */,
+				C54821752860C287001FB4E3 /* AstraMediaLibrary */,
+			);
 			productName = Astra;
 			productReference = C569052528585C210000856F /* Astra.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +140,7 @@
 				TargetAttributes = {
 					C569052428585C210000856F = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -111,6 +153,13 @@
 				Base,
 			);
 			mainGroup = C569051C28585C210000856F;
+			packageReferences = (
+				C569055028585C9C0000856F /* XCRemoteSwiftPackageReference "AstraAuthentication" */,
+				C569055628585CF20000856F /* XCRemoteSwiftPackageReference "AstraCoreAPI" */,
+				C569055E28585F1C0000856F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				C558178B285D1B8000FC9A96 /* XCRemoteSwiftPackageReference "SideMenu" */,
+				C54821742860C287001FB4E3 /* XCRemoteSwiftPackageReference "AstraMediaLibrary" */,
+			);
 			productRefGroup = C569052628585C210000856F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,21 +175,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				C569053528585C220000856F /* LaunchScreen.storyboard in Resources */,
-				C569053228585C220000856F /* Assets.xcassets in Resources */,
+				C5CAA6C0285863370089F6B1 /* GoogleService-Info.plist in Resources */,
+				C50BC4C8285892F30093F6A5 /* Assets.xcassets in Resources */,
 				C569053028585C210000856F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C569054F28585C650000856F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --strict\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C569052128585C210000856F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C569052D28585C210000856F /* ViewController.swift in Sources */,
-				C569052928585C210000856F /* AppDelegate.swift in Sources */,
-				C569052B28585C210000856F /* SceneDelegate.swift in Sources */,
+				C569054928585C450000856F /* Assembler.swift in Sources */,
+				C569054828585C450000856F /* Assembler+MediaLibrary.swift in Sources */,
+				C569054728585C450000856F /* Assembler+Authentication.swift in Sources */,
+				C569054A28585C450000856F /* AppDelegate.swift in Sources */,
+				C569054E28585C450000856F /* ViewController.swift in Sources */,
+				C569054628585C450000856F /* TransitionCoordinator.swift in Sources */,
+				C569054D28585C450000856F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,8 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FHB8SG5L4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Astra/Info.plist;
@@ -303,8 +380,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kyuuuyki.Astra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,8 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FHB8SG5L4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Astra/Info.plist;
@@ -332,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +438,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C54821742860C287001FB4E3 /* XCRemoteSwiftPackageReference "AstraMediaLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyuuuyki/AstraMediaLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C558178B285D1B8000FC9A96 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		C569055028585C9C0000856F /* XCRemoteSwiftPackageReference "AstraAuthentication" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyuuuyki/AstraAuthentication.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C569055628585CF20000856F /* XCRemoteSwiftPackageReference "AstraCoreAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyuuuyki/AstraCoreAPI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C569055E28585F1C0000856F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C54821752860C287001FB4E3 /* AstraMediaLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C54821742860C287001FB4E3 /* XCRemoteSwiftPackageReference "AstraMediaLibrary" */;
+			productName = AstraMediaLibrary;
+		};
+		C558178C285D1B8000FC9A96 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C558178B285D1B8000FC9A96 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		C569055128585C9C0000856F /* AstraAuthentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C569055028585C9C0000856F /* XCRemoteSwiftPackageReference "AstraAuthentication" */;
+			productName = AstraAuthentication;
+		};
+		C569055728585CF20000856F /* AstraCoreAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C569055628585CF20000856F /* XCRemoteSwiftPackageReference "AstraCoreAPI" */;
+			productName = AstraCoreAPI;
+		};
+		C569055F28585F1C0000856F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C569055E28585F1C0000856F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C569051D28585C210000856F /* Project object */;
 }

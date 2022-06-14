@@ -2,18 +2,17 @@
 //  ViewController.swift
 //  Astra
 //
-//  Created by Chayanon Ardkham on 14/6/22.
-//
+
+//  swiftlint:disable all
 
 import UIKit
 
 class ViewController: UIViewController {
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
 	}
-
-
+	
+	@IBAction func didTapOnForceCrashButton(_ sender: Any) {
+		fatalError("Crash was triggered")
+	}
 }
-
