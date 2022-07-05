@@ -25,5 +25,28 @@
 	<array>
 		<string>audio</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>$(FACEBOOK_APPID)</string>
+	<key>FacebookClientToken</key>
+	<string>$(FACEBOOK_CLIENT_TOKEN)</string>
+	<key>FacebookDisplayName</key>
+	<string>$(FACEBOOK_DISPLAY_NAME)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(GOOGLE_URLSCHEME_APPID)</string>
+				<string>$(FACEBOOK_URLSCHEME_APPID)</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

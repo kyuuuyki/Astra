@@ -3,7 +3,10 @@
 //  Astra
 //
 
+//  swiftlint:disable fatal_error_message
+
 import AstraAuthentication
+import AstraCoreAPI
 import AstraCoreModels
 import Foundation
 import KyuGenericExtensions
@@ -15,22 +18,39 @@ extension Assembler {
 			TransitionCoordinatorProtocol.self,
 			name: TransitionCoordinator.moduleName
 		) else {
-			return
+			fatalError()
+		}
+		
+		guard let errorHandlingService = resolver.resolve(
+			ErrorHandlingServiceProtocol.self,
+			name: ErrorHandlingService.moduleName
+		) else {
+			fatalError()
 		}
 		
 		guard let authenticationService = resolver.resolve(
-			AuthenticationServiceProtocol.self
+			AuthenticationServiceProtocol.self,
+			name: AuthenticationService.moduleName
 		) else {
-			return
+			fatalError()
 		}
 		
-		// MARK: Registering
+		guard let userService = resolver.resolve(
+			UserServiceProtocol.self,
+			name: UserService.moduleName
+		) else {
+			fatalError()
+		}
+		
+		// MARK: Registration
 		container.register(
 			SceneModuleProtocol.self,
 			name: SignUpSceneModule.moduleName
 		) { _ in
 			return SignUpSceneModule(
-				transitionCoordinator: transitionCoordinator
+				transitionCoordinator: transitionCoordinator,
+				errorHandlingService: errorHandlingService,
+				authenticationService: authenticationService
 			)
 		}
 		
@@ -40,7 +60,8 @@ extension Assembler {
 		) { _ in
 			return SignInSceneModule(
 				transitionCoordinator: transitionCoordinator,
-				authenticationService: authenticationService
+				authenticationService: authenticationService,
+				userService: userService
 			)
 		}
 		

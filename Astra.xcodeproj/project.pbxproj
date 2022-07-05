@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C50BC4C8285892F30093F6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50BC4C7285892F30093F6A5 /* Assets.xcassets */; };
+		C52EC8D628749EA70083197E /* ErrorHandlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52EC8D528749EA70083197E /* ErrorHandlingService.swift */; };
+		C52EC8DC2874A1BF0083197E /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C52EC8DB2874A1BD0083197E /* Debug.xcconfig */; };
+		C52EC8DE2874A5DA0083197E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52EC8DD2874A5DA0083197E /* ViewController.xib */; };
+		C52EC8E02874A7370083197E /* Assembler+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52EC8DF2874A7370083197E /* Assembler+RootViewController.swift */; };
 		C54821762860C287001FB4E3 /* AstraMediaLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C54821752860C287001FB4E3 /* AstraMediaLibrary */; };
 		C558178D285D1B8000FC9A96 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = C558178C285D1B8000FC9A96 /* SideMenu */; };
 		C569053028585C210000856F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C569052E28585C210000856F /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		C50BC4C7285892F30093F6A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C52EC8D528749EA70083197E /* ErrorHandlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingService.swift; sourceTree = "<group>"; };
+		C52EC8DB2874A1BD0083197E /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C52EC8DD2874A5DA0083197E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C52EC8DF2874A7370083197E /* Assembler+RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembler+RootViewController.swift"; sourceTree = "<group>"; };
 		C569052528585C210000856F /* Astra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C569052F28585C210000856F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C569053428585C220000856F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,9 +90,11 @@
 				C5CAA6BF285863370089F6B1 /* GoogleService-Info.plist */,
 				C569054428585C450000856F /* SceneDelegate.swift */,
 				C569054528585C450000856F /* ViewController.swift */,
+				C52EC8DD2874A5DA0083197E /* ViewController.xib */,
 				C569052E28585C210000856F /* Main.storyboard */,
 				C569053328585C220000856F /* LaunchScreen.storyboard */,
 				C569053628585C220000856F /* Info.plist */,
+				C52EC8DB2874A1BD0083197E /* Debug.xcconfig */,
 			);
 			path = Astra;
 			sourceTree = "<group>";
@@ -96,6 +106,8 @@
 				C569053E28585C450000856F /* Assembler+Authentication.swift */,
 				C569053F28585C450000856F /* Assembler+MediaLibrary.swift */,
 				C569054028585C450000856F /* Assembler.swift */,
+				C52EC8DF2874A7370083197E /* Assembler+RootViewController.swift */,
+				C52EC8D528749EA70083197E /* ErrorHandlingService.swift */,
 			);
 			path = Assembler;
 			sourceTree = "<group>";
@@ -177,6 +189,8 @@
 				C569053528585C220000856F /* LaunchScreen.storyboard in Resources */,
 				C5CAA6C0285863370089F6B1 /* GoogleService-Info.plist in Resources */,
 				C50BC4C8285892F30093F6A5 /* Assets.xcassets in Resources */,
+				C52EC8DC2874A1BF0083197E /* Debug.xcconfig in Resources */,
+				C52EC8DE2874A5DA0083197E /* ViewController.xib in Resources */,
 				C569053028585C210000856F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +228,8 @@
 				C569054728585C450000856F /* Assembler+Authentication.swift in Sources */,
 				C569054A28585C450000856F /* AppDelegate.swift in Sources */,
 				C569054E28585C450000856F /* ViewController.swift in Sources */,
+				C52EC8D628749EA70083197E /* ErrorHandlingService.swift in Sources */,
+				C52EC8E02874A7370083197E /* Assembler+RootViewController.swift in Sources */,
 				C569054628585C450000856F /* TransitionCoordinator.swift in Sources */,
 				C569054D28585C450000856F /* SceneDelegate.swift in Sources */,
 			);
@@ -243,6 +259,7 @@
 /* Begin XCBuildConfiguration section */
 		C569053728585C220000856F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52EC8DB2874A1BD0083197E /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

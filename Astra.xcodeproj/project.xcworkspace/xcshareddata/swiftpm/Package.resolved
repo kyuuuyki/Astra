@@ -19,12 +19,21 @@
       }
     },
     {
+      "identity" : "appauth-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/openid/AppAuth-iOS.git",
+      "state" : {
+        "revision" : "33660c271c961f8ce1084cc13f2ea8195e864f7d",
+        "version" : "1.5.0"
+      }
+    },
+    {
       "identity" : "astraauthentication",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kyuuuyki/AstraAuthentication.git",
       "state" : {
         "branch" : "main",
-        "revision" : "f5ec2254f01c7a9a100ac388be8929cb3f8b9040"
+        "revision" : "9464d5c1be9bbef57fa18cd40e4b1750f8527cc5"
       }
     },
     {
@@ -33,7 +42,7 @@
       "location" : "https://github.com/kyuuuyki/AstraCoreAPI.git",
       "state" : {
         "branch" : "main",
-        "revision" : "3c57c18fda8072fcd6d64ec0c3024fe6126ebd21"
+        "revision" : "1bdf7db2dad98e0a12e4eabc4432e80e9ef5db22"
       }
     },
     {
@@ -42,7 +51,7 @@
       "location" : "https://github.com/kyuuuyki/AstraCoreModels.git",
       "state" : {
         "branch" : "main",
-        "revision" : "f67fb9653a8df8da8f29afd976538134adc6bd1b"
+        "revision" : "513eddf895e011c7031f48113c8730a3b93d0c8b"
       }
     },
     {
@@ -60,7 +69,7 @@
       "location" : "https://github.com/kyuuuyki/AstraMediaLibrary.git",
       "state" : {
         "branch" : "main",
-        "revision" : "7c9b869f70506618eca541cc4655d8236eaf0aca"
+        "revision" : "c86d122dd434fcc94b47d5a33bcf9aed84011f8a"
       }
     },
     {
@@ -73,12 +82,21 @@
       }
     },
     {
+      "identity" : "facebook-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/facebook/facebook-ios-sdk.git",
+      "state" : {
+        "revision" : "84107793d352dbf698e3df4bf158d0af3633e3df",
+        "version" : "14.0.0"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
-        "revision" : "111d8d6ad1a1afd6c8e9561d26e55ab1e74fcb42",
-        "version" : "8.15.0"
+        "revision" : "e8828e8efc813817b3c2cbfde8e965f7a7a26641",
+        "version" : "9.2.0"
       }
     },
     {
@@ -86,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "ef819db8c58657a6ca367322e73f3b6322afe0a2",
-        "version" : "8.15.0"
+        "revision" : "192cce3e0486aecfdb61102a9c694c78dc89dc48",
+        "version" : "9.1.0"
       }
     },
     {
@@ -97,6 +115,15 @@
       "state" : {
         "revision" : "b905c49326b72211531ed9d7baa02d724828a8dc",
         "version" : "9.1.4"
+      }
+    },
+    {
+      "identity" : "googlesignin-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleSignIn-iOS.git",
+      "state" : {
+        "revision" : "27bc94f5e1bd1f3b12ba5abb2230dd77dd143f1e",
+        "version" : "6.0.2"
       }
     },
     {
@@ -127,6 +154,15 @@
       }
     },
     {
+      "identity" : "gtmappauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GTMAppAuth.git",
+      "state" : {
+        "revision" : "b9d1683be336ba8c8d1c6867bafeb056a5399700",
+        "version" : "1.3.0"
+      }
+    },
+    {
       "identity" : "iqkeyboardmanager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
@@ -136,21 +172,12 @@
       }
     },
     {
-      "identity" : "keychain-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/evgenyneu/keychain-swift.git",
-      "state" : {
-        "revision" : "d108a1fa6189e661f91560548ef48651ed8d93b9",
-        "version" : "20.0.0"
-      }
-    },
-    {
       "identity" : "kyugenericextensions",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kyuuuyki/KyuGenericExtensions.git",
       "state" : {
         "branch" : "main",
-        "revision" : "75ff448ee431f3eb6ae71f4e6866a9e1097eb6b0"
+        "revision" : "78c3d05f1c8f65a2f54a103071181631c708b81e"
       }
     },
     {
@@ -159,7 +186,7 @@
       "location" : "https://github.com/kyuuuyki/KyuNetworkExtensions.git",
       "state" : {
         "branch" : "main",
-        "revision" : "7637ff356f7671a95fff34d49b756e3e0e45c4da"
+        "revision" : "309ef18937fc696e5ecd85de41029e7b04eb9fc3"
       }
     },
     {
@@ -185,8 +212,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/nanopb.git",
       "state" : {
-        "revision" : "7ee9ef9f627d85cbe1b8c4f49a3ed26eed216c77",
-        "version" : "2.30908.0"
+        "revision" : "819d0a2173aff699fb8c364b6fb906f7cdb1a692",
+        "version" : "2.30909.0"
       }
     },
     {
@@ -194,8 +221,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/promises.git",
       "state" : {
-        "revision" : "46c1e6b5ac09d8f82c991061c659f67e573d425d",
-        "version" : "2.1.0"
+        "revision" : "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
+        "version" : "2.1.1"
       }
     },
     {
@@ -221,8 +248,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage.git",
       "state" : {
-        "revision" : "b729cc14f65e1412efc781a4cc46bd7f4720a3ae",
-        "version" : "5.12.6"
+        "revision" : "c4b8660bb3ef543fe4bdcaac0db956b32dc5583f",
+        "version" : "5.13.0"
       }
     },
     {

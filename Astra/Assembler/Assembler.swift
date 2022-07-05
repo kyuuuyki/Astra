@@ -3,6 +3,8 @@
 //  Astra
 //
 
+//  swiftlint:disable fatal_error_message
+
 import AstraAuthentication
 import AstraCoreAPI
 import AstraCoreModels
@@ -23,54 +25,73 @@ public final class Assembler: AssemblerProtocol {
 	// MARK: Private
 	private init() {}
 	private static let shared = Assembler()
-	private var rootViewController: UIViewController?
+	var rootViewController: UIViewController?
 }
 
 public extension Assembler {
 	func configure(window: UIWindow?) {
-		// MARK: Services
 		configureServices()
 		
-		// MARK: Scenes
 		configureAuthentication()
 		configureMediaLibrary()
 		
-		// MARK: Set RootViewController
 		configureRootViewController(window: window)
+		configureSideMenu()
 	}
 	
 	func configureServices() {
-		let transitionCoordinator = TransitionCoordinator()
 		container.register(
 			TransitionCoordinatorProtocol.self,
 			name: TransitionCoordinator.moduleName
 		) { _ in
-			return transitionCoordinator
+			return TransitionCoordinator()
 		}
 		
-		let authenticationService = AstraCoreAPI.coreAPI().authenticationService()
-		container.register(AuthenticationServiceProtocol.self) { _ in
-			return authenticationService
+		container.register(
+			ErrorHandlingServiceProtocol.self,
+			name: ErrorHandlingService.moduleName
+		) { _ in
+			return ErrorHandlingService()
 		}
 		
-		let mediaLibraryService = AstraCoreAPI.coreAPI().mediaLibraryService()
-		container.register(MediaLibraryServiceProtocol.self) { _ in
-			return mediaLibraryService
+		container.register(
+			AuthenticationServiceProtocol.self,
+			name: AuthenticationService.moduleName
+		) { _ in
+			return AuthenticationService()
+		}
+		
+		container.register(
+			MediaLibraryServiceProtocol.self,
+			name: MediaLibraryService.moduleName
+		) { _ in
+			let apiKey = AstraCoreAPI.coreAPI().userSecret?.dataGovAPIKey ?? "DEMO_KEY"
+			return MediaLibraryService(apiKey: apiKey)
+		}
+		
+		container.register(
+			UserServiceProtocol.self,
+			name: UserService.moduleName
+		) { _ in
+			return UserService()
 		}
 	}
 }
 
 private extension Assembler {
-	func configureRootViewController(window: UIWindow?) {
-		let startSceneModule = resolver.resolve(
+	func configureSideMenu() {
+		guard let signOutSceneModule = resolver.resolve(
 			SceneModuleProtocol.self,
-			name: MainSceneModule.moduleName
+			name: SignOutSceneModule.moduleName
+		) else {
+			fatalError()
+		}
+		
+		guard let signOutViewController = signOutSceneModule.build(with: nil) else { return }
+		let sideMenuNavigationController = SideMenuNavigationController(
+			rootViewController: signOutViewController
 		)
-		
-		guard let startViewController = startSceneModule?.build(with: nil) else { return }
-		let navigationController = UINavigationController(rootViewController: startViewController)
-		
-		window?.rootViewController = navigationController
-		rootViewController = navigationController
+		sideMenuNavigationController.menuWidth = UIScreen.main.bounds.width * 4 / 5
+		sideMenuNavigationController.presentationStyle = .viewSlideOutMenuIn
 	}
 }

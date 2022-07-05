@@ -3,6 +3,7 @@
 //  Astra
 //
 
+import AstraCoreAPI
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -30,5 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	}
 	
 	func sceneDidEnterBackground(_ scene: UIScene) {
+	}
+	
+	func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+		AstraCoreAPI.coreAPI().scene(scene, openURLContexts: URLContexts)
 	}
 }

@@ -1,0 +1,14 @@
+//
+//  Debug.xcconfig
+//  AstraAuthentication-Client
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GOOGLE_URLSCHEME_APPID = com.googleusercontent.apps.482227350850-s37q0ugrtekt8gemhc4v7rmq3tnhftk6
+
+FACEBOOK_URLSCHEME_APPID = fb548064250313357
+FACEBOOK_APPID = 548064250313357
+FACEBOOK_CLIENT_TOKEN = c9780418de777335ecfd295adfdc3d11
+FACEBOOK_DISPLAY_NAME = Astra

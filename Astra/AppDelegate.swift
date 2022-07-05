@@ -14,9 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		_ application: UIApplication,
 		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 	) -> Bool {
-		if let plistPath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") {
-			AstraCoreAPI.coreAPI().configure(googleServiceInfo: plistPath)
-		}
+		IQKeyboardManager.shared.enable = true
 		
 		do {
 			let audioSession = AVAudioSession.sharedInstance()
@@ -25,7 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			print("Audio session failed")
 		}
 		
-		IQKeyboardManager.shared.enable = true
+		let plistPath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") ?? ""
+		AstraCoreAPI.coreAPI().configure(environment: .production, googleServiceInfo: plistPath)
+		AstraCoreAPI.coreAPI().application(
+			application,
+			didFinishLaunchingWithOptions: launchOptions
+		)
+		
 		return true
 	}
 	
@@ -47,5 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		didDiscardSceneSessions
 		sceneSessions: Set<UISceneSession>
 	) {
+	}
+	
+	func application(
+		_ app: UIApplication,
+		open url: URL,
+		options: [UIApplication.OpenURLOptionsKey: Any] = [:]
+	) -> Bool {
+		return AstraCoreAPI.coreAPI().application(app, open: url, options: options)
 	}
 }
